@@ -18,13 +18,13 @@ public class minMaxMain {
     public static void max_min(int[] arr, int indeks_awal, int indeks_akhir, Maxmin hasil) {
         minMax[] ppArray = new minMax[5];
         ppArray[0] = new minMax();
-        Scanner izul = new Scanner(System.in);
+        Scanner andy = new Scanner(System.in);
 
         for (int i = 0; i < 5; i++) {
             ppArray[i] = new minMax();
             System.out.println("Nilai array indeks ke-" + i);
             System.out.println("Masukkan nilai: ");
-            ppArray[i].nilaiArray = izul.nextInt();
+            ppArray[i].nilaiArray = andy.nextInt();
         }
         int min = ppArray[0].nilaiArray;
         int max = ppArray[0].nilaiArray;
