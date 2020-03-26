@@ -1,3 +1,6 @@
+
+import java.util.Scanner;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,7 +13,13 @@
  */
 public class SearchingMain {
     public static void main(String[] args) {
-        int data[] = {10,30,40,50,60,70,80,90};
+      Scanner sukma = new Scanner(System.in);
+        System.out.println("Masukan banyaknya angka : ");
+        int banyak = sukma.nextInt();
+        int data[]= new int[banyak];
+        for(int i = 0; i< banyak;i++){
+            System.out.println("Masukan angka ke- " + (i+1) +" : ");
+        }
         
         Searching pencarian =new Searching(data,8);
         System.out.println("isi Array : ");
