@@ -24,18 +24,18 @@ public class QueueMain {
         System.out.println("------------------");
     }
     public static void main(String[] args) {
-        Scanner izul = new Scanner(System.in);
+        Scanner luluk = new Scanner(System.in);
         System.out.print("Masukkan jumlah maksimal antrian: ");
-        int n = izul.nextInt();
+        int n = luluk.nextInt();
         Queue Q = new Queue(n);
         int pilih;
         do {
             menu();
-            pilih = izul.nextInt();
+            pilih = luluk.nextInt();
             switch (pilih) {
                 case 1:
                     System.out.print("Masukkan data baru: ");
-                    int dataMasuk = izul.nextInt();
+                    int dataMasuk = luluk.nextInt();
                     Q.Enqueue(dataMasuk);
                     break;
                 case 2:
@@ -57,13 +57,13 @@ public class QueueMain {
             
                 case 6:
                     System.out.print("Masukkan Posisi Data Yang Anda Cari: ");
-                    int cari = izul.nextInt();
+                    int cari = luluk.nextInt();
                     Q.peekPosition(cari);
                     break;
             
             case 7:
                     System.out.print("Data pada Antrian: ");
-                    int antri = izul.nextInt();
+                    int antri = luluk.nextInt();
                     Q.peekAt(antri);
                     break;
             }

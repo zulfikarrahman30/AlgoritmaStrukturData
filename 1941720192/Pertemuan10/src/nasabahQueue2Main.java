@@ -25,18 +25,18 @@ public class nasabahQueue2Main {
     }
 
     public static void main(String[] args) {
-        Scanner izul = new Scanner(System.in);
+        Scanner luluk = new Scanner(System.in);
         System.out.print("Masukkan banyak Nasabah: ");
-        int n = izul.nextInt();
+        int n = luluk.nextInt();
         Queue2 Q = new Queue2(n);
         int pilih;
         do {
             menu();
-            pilih = izul.nextInt();
+            pilih = luluk.nextInt();
             switch (pilih) {
                 case 1:
                     System.out.print("Masukkan Nomor Rekening baru: ");
-                    int dataMasuk = izul.nextInt();
+                    int dataMasuk = luluk.nextInt();
                     Q.Enqueue(dataMasuk);
                     break;
                 case 2:
@@ -58,13 +58,13 @@ public class nasabahQueue2Main {
 
                 case 6:
                     System.out.print("Masukkan Nama Nasabah Yang Anda Cari: ");
-                    String cari = izul.nextLine();
+                    String cari = luluk.nextLine();
                     Q.peekPosition(cari);
                     break;
 
                 case 7:
                     System.out.print("Masukkan Nomor Antrian: ");
-                    int antri = izul.nextInt();
+                    int antri = luluk.nextInt();
                     Q.printNasabah(antri);
                     break;
             }
